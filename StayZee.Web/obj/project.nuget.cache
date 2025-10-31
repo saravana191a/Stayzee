@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jK9ZchvQGuw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\StayZee.Web\\StayZee.Web\\StayZee.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SUKI\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
+    "C:\\Users\\SUKI\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
