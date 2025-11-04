@@ -24,7 +24,7 @@ namespace StayZee.Domain.Entities
         public BookingStatus BookingStatus { get; set; } = null;
 
         public Guid PaymentStatusId { get; set; }
-        public BookingStatus PaymentStatus { get; set; } = null;
+        public PaymentStatus PaymentStatus { get; set; } = null;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public Payment? Payment { get; set; }
