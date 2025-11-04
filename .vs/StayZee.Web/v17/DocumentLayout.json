@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -74,6 +74,10 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AppDbContext.cs",
@@ -81,7 +85,7 @@
               "RelativeDocumentMoniker": "StayZee.Infrastucture\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Infrastucture\\Data\\AppDbContext.cs",
               "RelativeToolTip": "StayZee.Infrastucture\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAGYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T06:13:14.899Z",
               "EditorCaption": ""
@@ -96,8 +100,7 @@
               "RelativeToolTip": "StayZee.Domain\\Entities\\HomeApporovalStatus.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T06:12:40.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T06:12:40.361Z"
             },
             {
               "$type": "Document",
@@ -109,12 +112,7 @@
               "RelativeToolTip": "StayZee.Infrastucture\\Migrations\\AppDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T06:12:05.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2025-11-04T06:12:05.16Z"
             },
             {
               "$type": "Document",
@@ -126,8 +124,7 @@
               "RelativeToolTip": "StayZee.Domain\\Entities\\HomeDocument.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T02:06:01.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T02:06:01.812Z"
             },
             {
               "$type": "Document",
