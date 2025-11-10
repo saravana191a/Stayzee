@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E9A88442-B2B1-4C0B-8C57-FF8E45DC579D}|StayZee.Infrastucture\\StayZee.Infrastucture.csproj|c:\\users\\gisha\\documents\\backend\\stayzeeproject\\stayzee.infrastucture\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9A88442-B2B1-4C0B-8C57-FF8E45DC579D}|StayZee.Infrastucture\\StayZee.Infrastucture.csproj|solutionrelative:stayzee.infrastucture\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB9D7BC-200F-480F-9D9E-F20D656603C7}|StayZee.Domain\\StayZee.Domain.csproj|c:\\users\\gisha\\documents\\backend\\stayzeeproject\\stayzee.domain\\entities\\homeapporovalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB9D7BC-200F-480F-9D9E-F20D656603C7}|StayZee.Domain\\StayZee.Domain.csproj|solutionrelative:stayzee.domain\\entities\\homeapporovalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A88442-B2B1-4C0B-8C57-FF8E45DC579D}|StayZee.Infrastucture\\StayZee.Infrastucture.csproj|c:\\users\\gisha\\documents\\backend\\stayzeeproject\\stayzee.infrastucture\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9A88442-B2B1-4C0B-8C57-FF8E45DC579D}|StayZee.Infrastucture\\StayZee.Infrastucture.csproj|solutionrelative:stayzee.infrastucture\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBB9D7BC-200F-480F-9D9E-F20D656603C7}|StayZee.Domain\\StayZee.Domain.csproj|c:\\users\\gisha\\documents\\backend\\stayzeeproject\\stayzee.domain\\entities\\homedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBB9D7BC-200F-480F-9D9E-F20D656603C7}|StayZee.Domain\\StayZee.Domain.csproj|solutionrelative:stayzee.domain\\entities\\homedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Domain\\Entities\\Customer.cs",
               "RelativeDocumentMoniker": "StayZee.Domain\\Entities\\Customer.cs",
@@ -62,8 +74,49 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Infrastucture\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "StayZee.Infrastucture\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Infrastucture\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "StayZee.Infrastucture\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:13:14.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeApporovalStatus.cs",
+              "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Domain\\Entities\\HomeApporovalStatus.cs",
+              "RelativeDocumentMoniker": "StayZee.Domain\\Entities\\HomeApporovalStatus.cs",
+              "ToolTip": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Domain\\Entities\\HomeApporovalStatus.cs",
+              "RelativeToolTip": "StayZee.Domain\\Entities\\HomeApporovalStatus.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:12:40.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Infrastucture\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "StayZee.Infrastucture\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Infrastucture\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "StayZee.Infrastucture\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T06:12:05.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HomeDocument.cs",
               "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Domain\\Entities\\HomeDocument.cs",
               "RelativeDocumentMoniker": "StayZee.Domain\\Entities\\HomeDocument.cs",
@@ -71,12 +124,11 @@
               "RelativeToolTip": "StayZee.Domain\\Entities\\HomeDocument.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T02:06:01.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T02:06:01.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HomeOwner.cs",
               "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Domain\\Entities\\HomeOwner.cs",
               "RelativeDocumentMoniker": "StayZee.Domain\\Entities\\HomeOwner.cs",
@@ -84,12 +136,11 @@
               "RelativeToolTip": "StayZee.Domain\\Entities\\HomeOwner.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T02:05:47.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T02:05:47.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Home.cs",
               "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Domain\\Entities\\Home.cs",
               "RelativeDocumentMoniker": "StayZee.Domain\\Entities\\Home.cs",
@@ -97,12 +148,11 @@
               "RelativeToolTip": "StayZee.Domain\\Entities\\Home.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T02:05:32.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T02:05:32.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "HomeApprovalStatus.cs",
               "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Infrastucture\\Data\\HomeApprovalStatus.cs",
               "RelativeDocumentMoniker": "StayZee.Infrastucture\\Data\\HomeApprovalStatus.cs",
@@ -110,12 +160,11 @@
               "RelativeToolTip": "StayZee.Infrastucture\\Data\\HomeApprovalStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T01:56:15.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T01:56:15.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Web\\Program.cs",
               "RelativeDocumentMoniker": "StayZee.Web\\Program.cs",
@@ -123,16 +172,11 @@
               "RelativeToolTip": "StayZee.Web\\Program.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T01:53:56.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2025-11-04T01:53:56.679Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Web\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "StayZee.Web\\Controllers\\CustomerController.cs",
@@ -140,12 +184,11 @@
               "RelativeToolTip": "StayZee.Web\\Controllers\\CustomerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T15:41:02.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T15:41:02.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "BookingStatusController.cs",
               "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Web\\Controllers\\BookingStatusController.cs",
               "RelativeDocumentMoniker": "StayZee.Web\\Controllers\\BookingStatusController.cs",
@@ -157,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "BookingController.cs",
               "DocumentMoniker": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Web\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "StayZee.Web\\Controllers\\BookingController.cs",
