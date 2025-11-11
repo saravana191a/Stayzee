@@ -1708,7 +1708,7 @@
           }
         }
       },
-      "StayZee.Appilication/1.0.0": {
+      "StayZee.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
@@ -1718,10 +1718,10 @@
           "Swashbuckle.AspNetCore": "9.0.6"
         },
         "compile": {
-          "bin/placeholder/StayZee.Appilication.dll": {}
+          "bin/placeholder/StayZee.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/StayZee.Appilication.dll": {}
+          "bin/placeholder/StayZee.Application.dll": {}
         }
       },
       "StayZee.Domain/1.0.0": {
@@ -1739,20 +1739,21 @@
           "bin/placeholder/StayZee.Domain.dll": {}
         }
       },
-      "StayZee.Infrastucture/1.0.0": {
+      "StayZee.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
-          "StayZee.Appilication": "1.0.0",
+          "StayZee.Application": "1.0.0",
+          "StayZee.Domain": "1.0.0",
           "Swashbuckle.AspNetCore": "9.0.6"
         },
         "compile": {
-          "bin/placeholder/StayZee.Infrastucture.dll": {}
+          "bin/placeholder/StayZee.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/StayZee.Infrastucture.dll": {}
+          "bin/placeholder/StayZee.Infrastructure.dll": {}
         }
       }
     }
@@ -5214,20 +5215,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "StayZee.Appilication/1.0.0": {
+    "StayZee.Application/1.0.0": {
       "type": "project",
-      "path": "../StayZee.Appilication/StayZee.Appilication.csproj",
-      "msbuildProject": "../StayZee.Appilication/StayZee.Appilication.csproj"
+      "path": "../StayZee.Appilication/StayZee.Application.csproj",
+      "msbuildProject": "../StayZee.Appilication/StayZee.Application.csproj"
     },
     "StayZee.Domain/1.0.0": {
       "type": "project",
       "path": "../StayZee.Domain/StayZee.Domain.csproj",
       "msbuildProject": "../StayZee.Domain/StayZee.Domain.csproj"
     },
-    "StayZee.Infrastucture/1.0.0": {
+    "StayZee.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../StayZee.Infrastucture/StayZee.Infrastucture.csproj",
-      "msbuildProject": "../StayZee.Infrastucture/StayZee.Infrastucture.csproj"
+      "path": "../StayZee.Infrastucture/StayZee.Infrastructure.csproj",
+      "msbuildProject": "../StayZee.Infrastucture/StayZee.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5236,29 +5237,29 @@
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
-      "StayZee.Appilication >= 1.0.0",
-      "StayZee.Infrastucture >= 1.0.0",
+      "StayZee.Application >= 1.0.0",
+      "StayZee.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 9.0.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gisha\\.nuget\\packages\\": {},
+    "C:\\Users\\NEXT GEN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
+      "projectUniqueName": "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
       "projectName": "StayZee.Web",
-      "projectPath": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
-      "packagesPath": "C:\\Users\\gisha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Web\\obj\\",
+      "projectPath": "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
+      "packagesPath": "C:\\Users\\NEXT GEN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gisha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NEXT GEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5273,11 +5274,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Appilication\\StayZee.Appilication.csproj": {
-              "projectPath": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Appilication\\StayZee.Appilication.csproj"
+            "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj": {
+              "projectPath": "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj"
             },
-            "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastucture.csproj": {
-              "projectPath": "C:\\Users\\gisha\\Documents\\backend\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastucture.csproj"
+            "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj"
             }
           }
         }
@@ -5340,7 +5341,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

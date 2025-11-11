@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StayZee.Appilication\StayZee.Appilication.csproj" />
-    <ProjectReference Include="..\StayZee.Infrastucture\StayZee.Infrastucture.csproj" />
+    <ProjectReference Include="..\StayZee.Appilication\StayZee.Application.csproj" />
+    <ProjectReference Include="..\StayZee.Infrastucture\StayZee.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

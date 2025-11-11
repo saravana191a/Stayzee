@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StayZee.Appilication.DTOs.ResponseDTO
+﻿namespace StayZee.Application.DTOs
 {
-    internal class HomeResponseDTO
+    public class HomeResponseDTO
     {
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Address { get; set; } = string.Empty;
+        public string? ImagePath { get; set; }
+        public decimal RatePerDay { get; set; }
     }
 }

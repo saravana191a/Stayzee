@@ -1,19 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using StayZee.Domain.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace StayZee.Infrastucture.Data
+namespace StayZee.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-        {
-        }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+
         public DbSet<HomeOwner> HomeOwners { get; set; }
         public DbSet<Home> Homes { get; set; }
         public DbSet<HomeApporovalStatus> HomeApporavalStatuses { get; set; }
@@ -30,6 +24,8 @@ namespace StayZee.Infrastucture.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Booking>()
                 .HasOne(b => b.Customer)
                 .WithMany(c => c.Bookings)
@@ -65,7 +61,6 @@ namespace StayZee.Infrastucture.Data
                 .WithOne(b => b.Payment)
                 .HasForeignKey<Payment>(p => p.BookingId);
 
-            // Decimal precision fix
             modelBuilder.Entity<Payment>()
                 .Property(p => p.Amount)
                 .HasPrecision(18, 2);
@@ -78,24 +73,20 @@ namespace StayZee.Infrastucture.Data
                 .Property(b => b.TotalPrice)
                 .HasPrecision(18, 2);
 
-            // Relationship fix
             modelBuilder.Entity<Home>()
                 .HasOne(h => h.HomeApprovalStatus)
                 .WithMany(s => s.Homes)
                 .HasForeignKey(h => h.HomeApprovalStatusId)
                 .OnDelete(DeleteBehavior.Restrict);
-
-            base.OnModelCreating(modelBuilder);
         }
 
-      
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(
-                    "Your_Connection_String_Here",
-                    b => b.MigrationsAssembly("StayZee.Infrastucture")
+                    "Server=YOUR_SERVER;Database=StayZeeDb;Trusted_Connection=True;",
+                    b => b.MigrationsAssembly("StayZee.Infrastructure")
                 );
             }
         }

@@ -1,13 +1,13 @@
 ﻿using StayZee.Appilication.Interfaces.IRepository;
 using StayZee.Domain.Entities;
-using StayZee.Infrastucture.Data;
+using StayZee.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StayZee.Infrastucture.Repository
+namespace StayZee.Infrastructure.Repository
 {
     public class BookingRepository : IBookingRepository
     {

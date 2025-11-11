@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StayZee.Appilication\StayZee.Appilication.csproj" />
+    <ProjectReference Include="..\StayZee.Appilication\StayZee.Application.csproj" />
+    <ProjectReference Include="..\StayZee.Domain\StayZee.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

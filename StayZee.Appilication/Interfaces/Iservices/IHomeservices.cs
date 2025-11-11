@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using StayZee.Domain.Entities;
 
-namespace StayZee.Appilication.Interfaces.Iservices
+namespace StayZee.Application.Interfaces.IServices
 {
-    public class IHomeservices
+    public interface IHomeService
     {
+        Task<IEnumerable<Home>> GetAvailableHomesAsync();
+        Task<Home> AddHomeAsync(Home home);
+        Task<Home?> GetHomeByIdAsync(Guid id);
+        Task UpdateHomeAsync(Home home);
+        Task DeleteHomeAsync(Guid id);
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StayZee.Infrastucture.Repository
+namespace StayZee.Infrastructure.Repository
 {
     public class PaymentStatusRepository : IPaymentStatusRepository
     {
