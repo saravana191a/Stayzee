@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StayZee.Appilication.Interfaces.Iservices
+namespace StayZee.Application.Interfaces.Iservices
 {
     public class IHomeOwnerservices
     {

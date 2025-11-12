@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using StayZee.Infrastucture.Data;
+using StayZee.Infrastructure.Data;
 
 #nullable disable
 
-namespace StayZee.Infrastucture.Migrations
+namespace StayZee.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20251103140237_Init2")]

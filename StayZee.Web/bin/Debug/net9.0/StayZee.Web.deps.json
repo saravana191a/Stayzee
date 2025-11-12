@@ -12,8 +12,8 @@
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
-          "StayZee.Appilication": "1.0.0",
-          "StayZee.Infrastucture": "1.0.0",
+          "StayZee.Application": "1.0.0",
+          "StayZee.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "9.0.6"
         },
         "runtime": {
@@ -1000,7 +1000,7 @@
           }
         }
       },
-      "StayZee.Appilication/1.0.0": {
+      "StayZee.Application/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
@@ -1008,7 +1008,7 @@
           "Swashbuckle.AspNetCore": "9.0.6"
         },
         "runtime": {
-          "StayZee.Appilication.dll": {
+          "StayZee.Application.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1027,15 +1027,16 @@
           }
         }
       },
-      "StayZee.Infrastucture/1.0.0": {
+      "StayZee.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
-          "StayZee.Appilication": "1.0.0",
+          "StayZee.Application": "1.0.0",
+          "StayZee.Domain": "1.0.0",
           "Swashbuckle.AspNetCore": "9.0.6"
         },
         "runtime": {
-          "StayZee.Infrastucture.dll": {
+          "StayZee.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1651,7 +1652,7 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "StayZee.Appilication/1.0.0": {
+    "StayZee.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1661,7 +1662,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "StayZee.Infrastucture/1.0.0": {
+    "StayZee.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

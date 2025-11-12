@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace StayZee.Infrastucture.Migrations
+namespace StayZee.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class Init2 : Migration
