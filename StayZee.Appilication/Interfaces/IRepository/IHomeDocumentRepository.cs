@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StayZee.Appilication.Interfaces.IRepository
 {
-    public class IHomeDocumentRepository
+    public interface IHomeDocumentRepository
     {
     }
 }

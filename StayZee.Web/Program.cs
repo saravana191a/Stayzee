@@ -4,6 +4,7 @@ using StayZee.Application.Services;
 using StayZee.Application.Interfaces.IRepository;
 using StayZee.Infrastructure.Data;
 using StayZee.Infrastructure.Repository;
+using StayZee.Appilication.Interfaces.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Add services & repositories
 builder.Services.AddScoped<IHomeRepository, HomeRepository>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 builder.Services.AddScoped<IHomeService, HomeService>();
 
 builder.Services.AddControllers();

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {}
+    "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
+    "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
         "projectName": "StayZee.Domain",
-        "projectPath": "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
-        "packagesPath": "C:\\Users\\NEXT GEN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NEXT GEN\\Desktop\\New folder\\StayZeeProject\\StayZee.Domain\\obj\\",
+        "projectPath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+        "packagesPath": "C:\\Users\\gisha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\NEXT GEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gisha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
