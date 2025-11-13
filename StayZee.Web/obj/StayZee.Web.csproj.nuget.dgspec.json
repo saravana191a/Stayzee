@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj": {}
+    "D:\\New folder (7)\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj": {
+    "D:\\New folder (7)\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
+        "projectUniqueName": "D:\\New folder (7)\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
         "projectName": "StayZee.Application",
-        "projectPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
-        "packagesPath": "C:\\Users\\SUKI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Appilication\\obj\\",
+        "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
+        "packagesPath": "C:\\Users\\BOSS\\.nuget\\packages\\",
+        "outputPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Appilication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SUKI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BOSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
-                "projectPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj"
+              "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
+                "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj"
               }
             }
           }
@@ -54,6 +55,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -95,24 +100,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
+    "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+        "projectUniqueName": "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
         "projectName": "StayZee.Domain",
-        "projectPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
-        "packagesPath": "C:\\Users\\SUKI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Domain\\obj\\",
+        "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+        "packagesPath": "C:\\Users\\BOSS\\.nuget\\packages\\",
+        "outputPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SUKI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BOSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -121,6 +126,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -180,24 +186,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj": {
+    "D:\\New folder (7)\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj",
+        "projectUniqueName": "D:\\New folder (7)\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj",
         "projectName": "StayZee.Infrastructure",
-        "projectPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\SUKI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Infrastucture\\obj\\",
+        "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\BOSS\\.nuget\\packages\\",
+        "outputPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Infrastucture\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SUKI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BOSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -206,17 +212,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj": {
-                "projectPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj"
+              "D:\\New folder (7)\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj": {
+                "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj"
               },
-              "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
-                "projectPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj"
+              "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
+                "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj"
               }
             }
           }
@@ -278,24 +285,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj": {
+    "D:\\New folder (7)\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
+        "projectUniqueName": "D:\\New folder (7)\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
         "projectName": "StayZee.Web",
-        "projectPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
-        "packagesPath": "C:\\Users\\SUKI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Web\\obj\\",
+        "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
+        "packagesPath": "C:\\Users\\BOSS\\.nuget\\packages\\",
+        "outputPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SUKI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BOSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -304,17 +311,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj": {
-                "projectPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj"
+              "D:\\New folder (7)\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj": {
+                "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj"
               },
-              "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\SUKI\\Desktop\\HomeStay\\stay\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj"
+              "D:\\New folder (7)\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj": {
+                "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Infrastucture\\StayZee.Infrastructure.csproj"
               }
             }
           }
@@ -335,6 +343,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.5, )"
@@ -352,6 +368,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Snail.Toolkit.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -377,7 +397,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

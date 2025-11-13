@@ -21,7 +21,7 @@ namespace StayZee.Infrastructure.Data
         public DbSet<OTP> OTPs { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<PaymentStatus> PaymentStatuses { get; set; }
-
+        public DbSet<User> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
