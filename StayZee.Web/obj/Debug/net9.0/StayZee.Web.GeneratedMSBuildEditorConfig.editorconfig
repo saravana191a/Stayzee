@@ -17,21 +17,13 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StayZee.Web
 build_property.RootNamespace = StayZee.Web
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Web\
-=======
-build_property.ProjectDir = C:\Users\gisha\Desktop\b\StayZeeProject\StayZee.Web\
->>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
+build_property.ProjectDir = C:\Users\gisha\Desktop\error\StayZeeProject\StayZee.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
-build_property.MSBuildProjectDirectory = C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Web
-=======
-build_property.MSBuildProjectDirectory = C:\Users\gisha\Desktop\b\StayZeeProject\StayZee.Web
->>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
+build_property.MSBuildProjectDirectory = C:\Users\gisha\Desktop\error\StayZeeProject\StayZee.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
