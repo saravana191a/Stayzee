@@ -1,23 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {}
+<<<<<<< HEAD
+    "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {}
   },
   "projects": {
-    "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
+    "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
         "projectName": "StayZee.Domain",
-        "projectPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
-        "packagesPath": "C:\\Users\\BOSS\\.nuget\\packages\\",
-        "outputPath": "D:\\New folder (7)\\StayZeeProject\\StayZee.Domain\\obj\\",
+        "projectPath": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+        "packagesPath": "C:\\Users\\gisha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\obj\\",
+=======
+    "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+        "projectName": "StayZee.Domain",
+        "projectPath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+        "packagesPath": "C:\\Users\\gisha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\obj\\",
+>>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\BOSS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gisha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +40,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -86,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
