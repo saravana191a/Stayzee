@@ -6,17 +6,14 @@ using StayZee.Application.Interfaces.Iservices;
 using StayZee.Application.Services;
 using StayZee.Infrastructure.Data;
 using StayZee.Infrastructure.Repository;
-<<<<<<< HEAD
-using System.Text;
-<<<<<<< Updated upstream
-=======
-using StayZee.Appilication.Interfaces.IRepository;
->>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
-=======
 
-// Removed incorrect namespace import
-// using StayZee.Appilication.Interfaces.IRepository
->>>>>>> Stashed changes
+using System.Text;
+
+
+
+
+using StayZee.Appilication.Interfaces.IRepository
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +21,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-<<<<<<< HEAD
 // Register Services & Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
@@ -42,15 +38,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
-<<<<<<< Updated upstream
-=======
-// Add services & repositories
-builder.Services.AddScoped<IHomeRepository, HomeRepository>();
-builder.Services.AddScoped<IBookingRepository, BookingRepository>();
-builder.Services.AddScoped<IHomeService, HomeService>();
->>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
-=======
->>>>>>> Stashed changes
+
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
