@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "rL3mQCtkEtI=",
   "success": true,
   "projectFilePath": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+=======
+  "dgSpecHash": "DZ/GquD64fs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+>>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
   "expectedPackageFiles": [
     "C:\\Users\\gisha\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\gisha\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

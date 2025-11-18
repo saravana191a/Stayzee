@@ -5215,11 +5215,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
       "projectName": "StayZee.Application",
       "projectPath": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
       "packagesPath": "C:\\Users\\gisha\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Appilication\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
+      "projectName": "StayZee.Application",
+      "projectPath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
+      "packagesPath": "C:\\Users\\gisha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Appilication\\obj\\",
+>>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5240,8 +5248,13 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
               "projectPath": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj"
+=======
+            "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj": {
+              "projectPath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj"
+>>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
             }
           }
         }

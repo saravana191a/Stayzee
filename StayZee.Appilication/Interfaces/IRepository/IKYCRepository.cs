@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StayZee.Appilication.Interfaces.IRepository
 {
-    public class IKYCRepository
+    public interface IKYCRepository
     {
     }
 }

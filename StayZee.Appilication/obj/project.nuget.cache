@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "vI4EItP0uUQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
@@ -7,6 +8,14 @@
     "C:\\Users\\gisha\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\gisha\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\gisha\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+=======
+  "dgSpecHash": "xG/o1Ej6M5E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Appilication\\StayZee.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gisha\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
+    "C:\\Users\\gisha\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+>>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
     "C:\\Users\\gisha\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\gisha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\gisha\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",

@@ -1,4 +1,5 @@
-﻿using StayZee.Appilication.Interfaces.IRepository;
+﻿using Microsoft.EntityFrameworkCore;
+using StayZee.Appilication.Interfaces.IRepository;
 using StayZee.Domain.Entities;
 using StayZee.Infrastructure.Data;
 using System;
@@ -11,50 +12,92 @@ namespace StayZee.Infrastructure.Repository
 {
     public class BookingRepository : IBookingRepository
     {
-        private readonly AppDbContext _appDbContext;
+        private readonly AppDbContext _context;
 
-        public BookingRepository(AppDbContext appDbContext) 
+        public BookingRepository(AppDbContext context)
         {
-            _appDbContext = appDbContext;
-        }
-
-       
-        public void AddBooking(Booking booking)
-        {
-            _appDbContext.Bookings.Add(booking);
-            _appDbContext.SaveChanges();
+            _context = context;
         }
 
         
-        public List<Booking> GetAllBookings()
+        public async Task<Booking> AddBookingAsync(Booking booking)
         {
-            return _appDbContext.Bookings
-                .ToList();
+            await _context.Bookings.AddAsync(booking);
+            await _context.SaveChangesAsync();
+            return booking;
+        }
+
+        // Get booking by ID
+        public async Task<Booking?> GetBookingByIdAsync(Guid bookingId)
+        {
+            return await _context.Bookings
+                .Include(b => b.Customer)
+                .Include(b => b.Home)
+                .Include(b => b.BookingStatus)
+                .Include(b => b.PaymentStatus)
+                .Include(b => b.Payment)
+                .Include(b => b.Invoice)
+                .FirstOrDefaultAsync(b => b.BookingId == bookingId);
         }
 
        
-        public Booking? GetBookingById(Guid id)
+        public async Task<IEnumerable<Booking>> GetAllBookingsAsync()
         {
-            return _appDbContext.Bookings
-                .FirstOrDefault(b => b.BookingId == id);
+            return await _context.Bookings
+                .Include(b => b.Customer)
+                .Include(b => b.Home)
+                .Include(b => b.BookingStatus)
+                .Include(b => b.PaymentStatus)
+                .ToListAsync();
         }
 
        
-        public void UpdateBooking(Booking booking)
+        public async Task UpdateBookingAsync(Booking booking)
         {
-            _appDbContext.Bookings.Update(booking);
-            _appDbContext.SaveChanges();
+            _context.Bookings.Update(booking);
+            await _context.SaveChangesAsync();
         }
 
-        public void DeleteBooking(Guid id)
+        
+        public async Task DeleteBookingAsync(Guid bookingId)
         {
-            var booking = _appDbContext.Bookings.FirstOrDefault(b => b.BookingId == id);
+            var booking = await _context.Bookings.FindAsync(bookingId);
             if (booking != null)
             {
-                _appDbContext.Bookings.Remove(booking);
-                _appDbContext.SaveChanges();
+                _context.Bookings.Remove(booking);
+                await _context.SaveChangesAsync();
             }
         }
 
+        
+        public async Task<IEnumerable<Booking>> GetBookingsByCustomerIdAsync(Guid customerId)
+        {
+            return await _context.Bookings
+                .Include(b => b.Home)
+                .Include(b => b.BookingStatus)
+                .Where(b => b.CustomerId == customerId)
+                .ToListAsync();
+        }
+
+       
+        public async Task<IEnumerable<Booking>> GetBookingsByHomeIdAsync(Guid homeId)
+        {
+            return await _context.Bookings
+                .Include(b => b.Customer)
+                .Include(b => b.BookingStatus)
+                .Where(b => b.HomeId == homeId)
+                .ToListAsync();
+        }
+
+       
+        public async Task<IEnumerable<Booking>> GetActiveBookingsAsync()
+        {
+            return await _context.Bookings
+                .Include(b => b.Customer)
+                .Include(b => b.Home)
+                .Include(b => b.BookingStatus)
+                .Where(b => b.BookingStatus.BookingStatusName == "Active")
+                .ToListAsync();
+        }
     }
 }

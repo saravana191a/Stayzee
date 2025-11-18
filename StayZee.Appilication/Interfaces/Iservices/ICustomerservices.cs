@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StayZee.Application.Interfaces.Iservices
 {
-    public class ICustomerservices
+    public interface ICustomerservices
     {
     }
 }

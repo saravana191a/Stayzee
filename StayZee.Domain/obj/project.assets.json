@@ -5148,11 +5148,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
       "projectName": "StayZee.Domain",
       "projectPath": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
       "packagesPath": "C:\\Users\\gisha\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\gisha\\Desktop\\v\\back\\StayZeeProject\\StayZee.Domain\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+      "projectName": "StayZee.Domain",
+      "projectPath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\StayZee.Domain.csproj",
+      "packagesPath": "C:\\Users\\gisha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gisha\\Desktop\\b\\StayZeeProject\\StayZee.Domain\\obj\\",
+>>>>>>> 70ee916185e067bdb11768e97c875300f8e90845
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
