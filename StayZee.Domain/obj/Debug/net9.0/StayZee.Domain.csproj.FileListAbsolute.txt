@@ -28,3 +28,18 @@ D:\New folder (7)\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\refint\StayZee.
 D:\New folder (7)\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.pdb
 D:\New folder (7)\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.genruntimeconfig.cache
 D:\New folder (7)\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\ref\StayZee.Domain.dll
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\bin\Debug\net9.0\StayZee.Domain.deps.json
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\bin\Debug\net9.0\StayZee.Domain.runtimeconfig.json
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\bin\Debug\net9.0\StayZee.Domain.dll
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\bin\Debug\net9.0\StayZee.Domain.pdb
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.csproj.AssemblyReference.cache
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.AssemblyInfoInputs.cache
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.AssemblyInfo.cs
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.csproj.CoreCompileInputs.cache
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.sourcelink.json
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.dll
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\refint\StayZee.Domain.dll
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.pdb
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\StayZee.Domain.genruntimeconfig.cache
+C:\Users\gisha\Desktop\v\back\StayZeeProject\StayZee.Domain\obj\Debug\net9.0\ref\StayZee.Domain.dll
