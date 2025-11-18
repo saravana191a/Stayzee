@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oLiCS225h/4=",
+  "dgSpecHash": "lggI+b9waiY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gisha\\Desktop\\error\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
+  "projectFilePath": "C:\\Users\\gisha\\Desktop\\bbhttpsgithub.comKunasi123StayZeeProject.git\\StayZeeProject\\StayZee.Web\\StayZee.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gisha\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\gisha\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

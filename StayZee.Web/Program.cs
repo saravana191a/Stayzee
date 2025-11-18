@@ -6,14 +6,10 @@ using StayZee.Application.Interfaces.Iservices;
 using StayZee.Application.Services;
 using StayZee.Infrastructure.Data;
 using StayZee.Infrastructure.Repository;
-
 using System.Text;
 
-
-
-
-using StayZee.Appilication.Interfaces.IRepository
-
+// Removed invalid using directive
+// using StayZee.Appilication.Interfaces.IRepository
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,7 +34,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
-
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
