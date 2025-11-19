@@ -1,13 +1,11 @@
-﻿using StayZee.Domain.Entities;
+﻿using StayZee.Application.DTOs;
 
-namespace StayZee.Application.Interfaces.IServices
+namespace StayZee.Application.Interfaces
 {
     public interface IHomeService
     {
-        Task<IEnumerable<Home>> GetAvailableHomesAsync();
-        Task<Home> AddHomeAsync(Home home);
-        Task<Home?> GetHomeByIdAsync(Guid id);
-        Task UpdateHomeAsync(Home home);
-        Task DeleteHomeAsync(Guid id);
+        Task<HomeResponseDto> CreateHomeAsync(HomeRequestDto request);
+        Task<HomeResponseDto?> GetHomeByIdAsync(Guid id);
+        Task<IEnumerable<HomeResponseDto>> GetAllHomesAsync();
     }
 }

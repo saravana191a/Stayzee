@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using StayZee.Application.Interfaces.IServices;
-using StayZee.Domain.Entities;
+using StayZee.Application.DTOs;
+using StayZee.Application.Interfaces;
 
 namespace StayZee.Web.Controllers
 {
@@ -15,11 +15,11 @@ namespace StayZee.Web.Controllers
             _homeService = homeService;
         }
 
-        [HttpGet("available")]
-        public async Task<IActionResult> GetAvailableHomes()
+        [HttpPost("create")]
+        public async Task<IActionResult> CreateHome([FromBody] HomeRequestDto request)
         {
-            var homes = await _homeService.GetAvailableHomesAsync();
-            return Ok(homes);
+            var home = await _homeService.CreateHomeAsync(request);
+            return Ok(home);
         }
 
         [HttpGet("{id}")]
@@ -28,6 +28,13 @@ namespace StayZee.Web.Controllers
             var home = await _homeService.GetHomeByIdAsync(id);
             if (home == null) return NotFound();
             return Ok(home);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllHomes()
+        {
+            var homes = await _homeService.GetAllHomesAsync();
+            return Ok(homes);
         }
     }
 }

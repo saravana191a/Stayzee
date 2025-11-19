@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StayZee.Application.Interfaces.IRepository;
+using StayZee.Application.Interfaces;
 using StayZee.Domain.Entities;
 using StayZee.Infrastructure.Data;
 
-namespace StayZee.Infrastructure.Repository
+namespace StayZee.Infrastructure.Repositories
 {
     public class HomeRepository : IHomeRepository
     {
@@ -14,48 +14,26 @@ namespace StayZee.Infrastructure.Repository
             _context = context;
         }
 
-        public async Task<IEnumerable<Home>> GetAvailableHomesAsync()
+        public async Task AddAsync(Home home)
         {
-            var today = DateTime.UtcNow;
-            return await _context.Homes
-                .Include(h => h.HomeApprovalStatus)
-                .Where(h => h.HomeApprovalStatus.Name == "Approved"
-                            && h.AvailableFrom <= today
-                            && h.AvailableTo >= today)
-                .ToListAsync();
-        }
-
-        public async Task<Home> AddHomeAsync(Home home)
-        {
-            home.Id = Guid.NewGuid();
-            _context.Homes.Add(home);
+            await _context.Homes.AddAsync(home);
             await _context.SaveChangesAsync();
-            return home;
         }
 
-        public async Task<Home?> GetHomeByIdAsync(Guid id)
+        public async Task<Home?> GetByIdAsync(Guid id)
         {
             return await _context.Homes
                 .Include(h => h.HomeApprovalStatus)
                 .Include(h => h.Bookings)
-                .Include(h => h.Documents)
                 .FirstOrDefaultAsync(h => h.Id == id);
         }
 
-        public async Task UpdateHomeAsync(Home home)
+        public async Task<IEnumerable<Home>> GetAllAsync()
         {
-            _context.Homes.Update(home);
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task DeleteHomeAsync(Guid id)
-        {
-            var home = await _context.Homes.FindAsync(id);
-            if (home != null)
-            {
-                _context.Homes.Remove(home);
-                await _context.SaveChangesAsync();
-            }
+            return await _context.Homes
+                .Include(h => h.HomeApprovalStatus)
+                .Include(h => h.Bookings)
+                .ToListAsync();
         }
     }
 }

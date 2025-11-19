@@ -551,7 +551,7 @@ namespace StayZee.Infrastructure.Migrations
                     b.Navigation("Documents");
                 });
 
-            modelBuilder.Entity("StayZee.Domain.Entities.HomeApporovalStatus", b =>
+            modelBuilder.Entity("StayZee.Domain.Entities.HomeApprovalStatus", b =>
                 {
                     b.Navigation("Homes");
                 });
