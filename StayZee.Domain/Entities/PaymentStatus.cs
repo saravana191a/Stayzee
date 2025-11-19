@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StayZee.Domain.Entities
 {
     public class PaymentStatus
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
+        public Guid PaymentStatusId { get; set; } = Guid.NewGuid();
+        public string Name { get; set; } = string.Empty;
+
         public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
     }
 }

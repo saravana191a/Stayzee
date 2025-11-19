@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using StayZee.Application.DTOs;
 
-namespace StayZee.Application.Interfaces.Iservices
+namespace StayZee.Application.Interfaces
 {
-    public class IBookingservices
+    public interface IBookingService
     {
+        Task<BookingResponseDto> CreateBookingAsync(BookingRequestDto request);
+        Task<IEnumerable<BookingResponseDto>> GetAllBookingsAsync();
+        Task<BookingResponseDto?> GetBookingByIdAsync(Guid bookingId);
     }
 }

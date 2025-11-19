@@ -1,34 +1,21 @@
 ﻿using StayZee.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace StayZee.Appilication.Interfaces.IRepository
+namespace StayZee.Application.Interfaces
 {
     public interface IBookingRepository
     {
-        Task<Booking> AddBookingAsync(Booking booking);
+        Task AddAsync(Booking booking);
+        Task<Booking?> GetByIdAsync(Guid bookingId);
+        Task<IEnumerable<Booking>> GetAllAsync();
+    }
 
-        Task<Booking?> GetBookingByIdAsync(Guid bookingId);
+    public interface IBookingStatusRepository
+    {
+        Task<BookingStatus?> GetByIdAsync(Guid id);
+    }
 
-       
-        Task<IEnumerable<Booking>> GetAllBookingsAsync();
-
-        
-        Task UpdateBookingAsync(Booking booking);
-
-        
-        Task DeleteBookingAsync(Guid bookingId);
-
-       
-        Task<IEnumerable<Booking>> GetBookingsByCustomerIdAsync(Guid customerId);
-
-        
-        Task<IEnumerable<Booking>> GetBookingsByHomeIdAsync(Guid homeId);
-
-        
-        Task<IEnumerable<Booking>> GetActiveBookingsAsync();
+    public interface IPaymentStatusRepository
+    {
+        Task<PaymentStatus?> GetByIdAsync(Guid id);
     }
 }

@@ -1,6 +1,8 @@
-﻿namespace StayZee.Application.DTOs
+﻿using System;
+
+namespace StayZee.Application.DTOs
 {
-    public class HomeRequestDTO
+    public class HomeRequestDto
     {
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
@@ -11,5 +13,6 @@
         public string Features { get; set; } = string.Empty;
         public decimal RatePerDay { get; set; }
         public Guid OwnerId { get; set; }
+        public Guid HomeApprovalStatusId { get; set; }
     }
 }

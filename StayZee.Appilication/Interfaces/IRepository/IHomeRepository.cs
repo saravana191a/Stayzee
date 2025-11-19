@@ -1,13 +1,11 @@
 ﻿using StayZee.Domain.Entities;
 
-namespace StayZee.Application.Interfaces.IRepository
+namespace StayZee.Application.Interfaces
 {
     public interface IHomeRepository
     {
-        Task<IEnumerable<Home>> GetAvailableHomesAsync();
-        Task<Home> AddHomeAsync(Home home);
-        Task<Home?> GetHomeByIdAsync(Guid id);
-        Task UpdateHomeAsync(Home home);
-        Task DeleteHomeAsync(Guid id);
+        Task AddAsync(Home home);
+        Task<Home?> GetByIdAsync(Guid id);
+        Task<IEnumerable<Home>> GetAllAsync();
     }
 }
