@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StayZee.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32ad2750abfe33e5a57dfbe775308d417558ca31")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9ea2da45998e50f1ef6f7ab51df51a9845f86d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("StayZee.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StayZee.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
