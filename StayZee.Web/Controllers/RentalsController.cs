@@ -1,0 +1,26 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using StayZee.Application.DTOs.RequestDTO;
+using StayZee.Application.Interfaces.Iservices;
+
+namespace StayZee.Web.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class RentalsController : ControllerBase
+    {
+        private readonly IRentalService _service;
+
+        public RentalsController(IRentalService service)
+        {
+            _service = service;
+        }
+
+        [HttpPost("create")]
+        public async Task<IActionResult> CreateRental([FromForm] CreateRentalRequest request)
+        {
+            var result = await _service.CreateRental(request);
+            return Ok(result);
+        }
+    }
+
+}

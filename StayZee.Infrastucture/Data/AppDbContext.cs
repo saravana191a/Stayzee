@@ -24,8 +24,16 @@ namespace StayZee.Infrastructure.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Property> Properties { get; set; }   
         public DbSet<favorite> Favorites { get; set; }
+        public DbSet<Rental> Rentals { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            foreach (var prop in modelBuilder.Model.GetEntityTypes()
+                .SelectMany(t => t.GetProperties())
+                .Where(p => p.ClrType == typeof(decimal) || p.ClrType == typeof(decimal?)))
+            {
+                prop.SetColumnType("decimal(18,2)");
+            }
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Booking>()

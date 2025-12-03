@@ -6,14 +6,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace StayZee.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateUserTable : Migration
+    public partial class PropertyFixed_Final : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "HomeApprovalStatus");
-
             migrationBuilder.RenameColumn(
                 name: "Id",
                 table: "PaymentStatuses",
@@ -71,6 +68,13 @@ namespace StayZee.Infrastructure.Migrations
                 nullable: false,
                 defaultValue: new Guid("00000000-0000-0000-0000-000000000000"));
 
+            migrationBuilder.AddColumn<string>(
+                name: "Status",
+                table: "Bookings",
+                type: "nvarchar(max)",
+                nullable: false,
+                defaultValue: "");
+
             migrationBuilder.CreateTable(
                 name: "Favorites",
                 columns: table => new
@@ -89,8 +93,8 @@ namespace StayZee.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     City = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     MiniBedrooms = table.Column<int>(type: "int", nullable: false),
                     DayPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
@@ -100,11 +104,53 @@ namespace StayZee.Infrastructure.Migrations
                     HasParking = table.Column<bool>(type: "bit", nullable: false),
                     PropertyType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsLongTerm = table.Column<bool>(type: "bit", nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MinBedrooms = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Properties", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Rentals",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    AccountNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    HomeLocation = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OneDayPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    CurrentBill = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    PhotoUrl1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhotoUrl2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhotoUrl3 = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhotoUrl4 = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Rentals", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NICOrPassport = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Role = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateIndex(
@@ -123,8 +169,18 @@ namespace StayZee.Infrastructure.Migrations
             migrationBuilder.DropTable(
                 name: "Properties");
 
+            migrationBuilder.DropTable(
+                name: "Rentals");
+
+            migrationBuilder.DropTable(
+                name: "Users");
+
             migrationBuilder.DropColumn(
                 name: "PropertyId",
+                table: "Bookings");
+
+            migrationBuilder.DropColumn(
+                name: "Status",
                 table: "Bookings");
 
             migrationBuilder.RenameColumn(
@@ -176,15 +232,6 @@ namespace StayZee.Infrastructure.Migrations
                 oldClrType: typeof(string),
                 oldType: "nvarchar(100)",
                 oldMaxLength: 100);
-
-            migrationBuilder.CreateTable(
-                name: "HomeApprovalStatus",
-                columns: table => new
-                {
-                },
-                constraints: table =>
-                {
-                });
         }
     }
 }

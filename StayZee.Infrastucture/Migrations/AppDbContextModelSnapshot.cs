@@ -55,6 +55,10 @@ namespace StayZee.Infrastructure.Migrations
                     b.Property<Guid>("PropertyId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("TotalPrice")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
@@ -411,6 +415,10 @@ namespace StayZee.Infrastructure.Migrations
                     b.Property<decimal>("DayPrice")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("HasParking")
                         .HasColumnType("bit");
 
@@ -430,6 +438,9 @@ namespace StayZee.Infrastructure.Migrations
                     b.Property<bool>("IsPetFriendly")
                         .HasColumnType("bit");
 
+                    b.Property<int>("MinBedrooms")
+                        .HasColumnType("int");
+
                     b.Property<int>("MiniBedrooms")
                         .HasColumnType("int");
 
@@ -437,11 +448,7 @@ namespace StayZee.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("title")
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -451,6 +458,55 @@ namespace StayZee.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Properties");
+                });
+
+            modelBuilder.Entity("StayZee.Domain.Entities.Rental", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AccountNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("CurrentBill")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("HomeLocation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("OneDayPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("PhotoUrl1")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoUrl2")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoUrl3")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoUrl4")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Rentals");
                 });
 
             modelBuilder.Entity("StayZee.Domain.Entities.User", b =>

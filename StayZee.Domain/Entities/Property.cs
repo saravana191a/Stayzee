@@ -9,9 +9,9 @@ namespace StayZee.Domain.Entities
     public class Property
     {
         public Guid Id { get; set; }= Guid.NewGuid();
-        public string title { get; set; } = " ";
+       // public string title { get; set; } = " ";
         public string Title { get; set; }
-        public string description { get; set; } = " ";
+        //public string description { get; set; } = " ";
         public string Description { get; set; }
         public string City { get; set; } = " ";
         public int MiniBedrooms { get; set; } = 1;
