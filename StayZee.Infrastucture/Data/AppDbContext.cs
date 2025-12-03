@@ -22,6 +22,8 @@ namespace StayZee.Infrastructure.Data
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<PaymentStatus> PaymentStatuses { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Property> Properties { get; set; }   
+        public DbSet<favorite> Favorites { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -78,6 +80,10 @@ namespace StayZee.Infrastructure.Data
                 .WithMany(s => s.Homes)
                 .HasForeignKey(h => h.HomeApprovalStatusId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Property>()
+                .HasIndex(p => p.Id)
+                .IsUnique();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

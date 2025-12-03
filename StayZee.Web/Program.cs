@@ -6,6 +6,7 @@ using StayZee.Application.Interfaces.Iservices;
 using StayZee.Application.Services;
 using StayZee.Infrastructure.Data;
 using StayZee.Infrastructure.Repository;
+using StayZee.Infrastructure.Repostory;
 using System.Text;
 
 // Removed invalid using directive
@@ -20,6 +21,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 // Register Services & Repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IPropertyRepository, PropertyRepository>();
 
 // Add JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

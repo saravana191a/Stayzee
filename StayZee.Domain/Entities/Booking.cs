@@ -5,7 +5,7 @@ namespace StayZee.Domain.Entities
     public class Booking
     {
         public Guid BookingId { get; set; } = Guid.NewGuid();
-
+        public Guid PropertyId { get; set; }
         public Guid CustomerId { get; set; }
         public Customer? Customer { get; set; }
 
@@ -26,5 +26,6 @@ namespace StayZee.Domain.Entities
         public Invoice? Invoice { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public string Status { get; set; }
     }
 }
