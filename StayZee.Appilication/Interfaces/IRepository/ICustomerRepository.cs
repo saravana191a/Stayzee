@@ -1,12 +1,15 @@
-﻿using System;
+﻿using StayZee.Domain.Entities;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace StayZee.Appilication.Interfaces.IRepository
+namespace StayZee.Application.Interfaces.IRepository
 {
     public interface ICustomerRepository
     {
+        Task<Customer?> GetByIdAsync(Guid id);
+        Task<Customer?> GetByEmailAsync(string email);
+        Task<IEnumerable<Customer>> GetAllAsync();
+        Task AddAsync(Customer customer);
     }
 }
