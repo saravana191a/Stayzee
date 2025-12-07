@@ -22,11 +22,6 @@ namespace StayZee.Web.Controllers
             return Ok(result);
         }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginDTO dto)
-        {
-            var result = await _authService.LoginAsync(dto);
-            return Ok(result);
-        }
+       
     }
 }
